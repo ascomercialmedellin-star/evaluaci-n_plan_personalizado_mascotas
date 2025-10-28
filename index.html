@@ -310,7 +310,7 @@
         item.opciones.forEach((op, i)=>{
           const id = `${item.id}_${i}`;
           const label = document.createElement('label');
-          label className='opt';
+          label.className='opt';
           label.setAttribute('class','opt');
           label.innerHTML = `<input type="checkbox" name="${item.id}" value="${i}" id="${id}"> ${op}`;
           main.appendChild(label);
